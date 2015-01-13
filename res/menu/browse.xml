@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/actionDisconnect"
+        android:showAsAction="ifRoom"
+        android:title="@string/menuDisconnect"/>
+    
+    <item
+        android:id="@+id/actionShowCurrentPlaylist"
+        android:showAsAction="ifRoom"
+        android:title="@string/menuShowCurrentPlaylist"/>
+    
+    <item
+        android:id="@+id/actionRefresh"
+        android:showAsAction="ifRoom"
+        android:title="@string/menuRefresh"/>
+</menu>

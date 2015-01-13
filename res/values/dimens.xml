@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activityHorizontalMargin">16dp</dimen>
+    <dimen name="activityVerticalMargin">16dp</dimen>
+    <dimen name="controlButtonWidthSmall">110dp</dimen>
+    <dimen name="defaultTextSize">20dp</dimen>
+    <dimen name="defaultCellHeight">50dp</dimen>
+
+</resources>

@@ -1,0 +1,206 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activityVerticalMargin"
+    android:paddingLeft="@dimen/activityHorizontalMargin"
+    android:paddingRight="@dimen/activityHorizontalMargin"
+    android:paddingTop="@dimen/activityVerticalMargin">
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	    
+	   	<TextView
+	        android:id="@+id/connectedServerTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:textSize="@dimen/defaultTextSize"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp" />
+	       
+	   	<RelativeLayout
+	   	    android:id="@+id/buttonGroup1"
+	   	    android:layout_below="@id/connectedServerTitle"
+	   	    android:orientation="horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:baselineAligned="false">
+	        
+	   	    <Button
+		        android:id="@+id/buttonPrevious"
+		        android:layout_width="@dimen/controlButtonWidthSmall"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:onClick="buttonBasicCommandClicked"
+		        android:text="@string/remotePrevious" />
+	   	    
+		    <Button
+		        android:id="@+id/buttonNext"
+		        android:layout_width="@dimen/controlButtonWidthSmall"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:onClick="buttonBasicCommandClicked"
+		        android:text="@string/remoteNext" />
+		</RelativeLayout>
+		
+	   	<LinearLayout
+	   	    android:id="@+id/buttonGroup2"
+	   	    android:layout_below="@id/buttonGroup1"
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_marginTop="5dp"
+	   	    android:orientation="horizontal">
+	   		
+	   		<Button
+		        android:id="@+id/buttonPlayPause"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="buttonBasicCommandClicked"
+		        android:text="@string/remotePlayPause" />
+	   		
+	   		<Button
+		        android:id="@+id/buttonPlayFile"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="buttonBasicCommandClicked"
+		        android:text="@string/remotePlayFile" />
+	   	</LinearLayout>
+	    
+	    <RelativeLayout
+	        android:id="@+id/buttonGroup3"
+	        android:layout_marginTop="5dp"
+	        android:layout_below="@id/buttonGroup2"
+	   	    android:orientation="horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false">
+			
+			<Button
+			    android:id="@+id/buttonBack"
+			    android:layout_width="@dimen/controlButtonWidthSmall"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:onClick="buttonBasicCommandClicked"
+			    android:text="@string/remoteBack" />
+		
+	        <Button
+		    	android:id="@+id/buttonForward"
+			    android:layout_width="@dimen/controlButtonWidthSmall"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentRight="true"
+			    android:onClick="buttonBasicCommandClicked"
+			    android:text="@string/remoteForward" />
+		</RelativeLayout>
+	    
+	    <Button
+	        android:id="@+id/buttonSkipTitleSequence"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/buttonGroup3"
+	        android:layout_marginTop="5dp"
+	        android:onClick="buttonBasicCommandClicked"
+	        android:text="@string/remoteSkipTitle" />
+	    
+	    <Button
+	        android:id="@+id/buttonRandom"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/buttonSkipTitleSequence"
+	        android:layout_marginTop="5dp"
+	        android:onClick="buttonRandomClick"
+	        android:text="@string/remoteRandom" />
+	    
+	    <LinearLayout
+	   	    android:id="@+id/buttonGroup4"
+	   	    android:layout_below="@id/buttonRandom"
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_marginTop="5dp"
+	   	    android:orientation="horizontal">
+	               
+		    <Button
+		        android:id="@+id/buttonVolDown"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="buttonBasicCommandClicked"
+		        android:text="@string/remoteVolDown" />
+		    
+		    <Button
+		        android:id="@+id/buttonVolUp"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="buttonBasicCommandClicked"
+		        android:text="@string/remoteVolUp" />
+		</LinearLayout>
+		
+		<LinearLayout
+	   	    android:id="@+id/buttonGroup5"
+	   	    android:layout_below="@id/buttonGroup4"
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_marginTop="5dp"
+	   	    android:orientation="horizontal">
+	               
+		    <Button
+		        android:id="@+id/buttonVolDownTv"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="buttonBasicCommandClicked"
+		        android:text="@string/remoteVolDownTv" />
+		    
+		    <Button
+		        android:id="@+id/buttonVolUpTv"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="buttonBasicCommandClicked"
+		        android:text="@string/remoteVolUpTv" />
+		</LinearLayout>
+	    
+	    <Button
+	        android:id="@+id/buttonMuteTv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/buttonGroup5"
+	        android:layout_marginTop="5dp"
+	        android:onClick="buttonBasicCommandClicked"
+	        android:text="@string/remoteMuteTv" />
+	    
+	    <Button
+	        android:id="@+id/buttonFullScreen"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/buttonMuteTv"
+	        android:layout_marginTop="5dp"
+	        android:onClick="buttonBasicCommandClicked"
+	        android:text="@string/remoteFullScreen" />
+	    
+	    <Button
+	        android:id="@+id/buttonBrowse"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/buttonFullScreen"
+	        android:layout_marginTop="5dp"
+	        android:onClick="buttonBrowseClick"
+	        android:text="@string/remoteBrowse" />
+	    
+	    <Button
+	        android:id="@+id/buttonSourceTv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/buttonBrowse"
+	        android:layout_marginTop="5dp"
+	        android:onClick="buttonBrowseClick"
+	        android:text="@string/remoteSourceTv" />
+	
+	</RelativeLayout>
+</ScrollView>

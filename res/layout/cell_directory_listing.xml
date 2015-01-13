@@ -1,0 +1,33 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/defaultCellHeight"
+    android:descendantFocusability="blocksDescendants">
+    
+    <ImageView
+        android:id="@+id/directoryListingImage"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/defaultCellHeight"
+        android:gravity="center_vertical|left"
+        android:contentDescription="@string/browseDirectoryListing" />
+    
+    <ImageView
+        android:id="@+id/directoryListingCheckImage"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/defaultCellHeight"
+        android:gravity="center"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/checkmark" />
+
+    <TextView
+        android:id="@+id/directoryListingName"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/defaultCellHeight"
+        android:layout_toRightOf="@id/directoryListingImage"
+        android:layout_toLeftOf="@id/directoryListingCheckImage"
+	    android:gravity="center_vertical|left"
+        android:textSize="@dimen/defaultTextSize" />
+    
+</RelativeLayout>

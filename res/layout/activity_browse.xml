@@ -1,0 +1,55 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activityVerticalMargin"
+    android:paddingLeft="@dimen/activityHorizontalMargin"
+    android:paddingRight="@dimen/activityHorizontalMargin"
+    android:paddingTop="@dimen/activityVerticalMargin">
+    
+    <com.shiznatix.mediacomrade.android.tools.FlowLayout
+		android:id="@+id/browsingDirLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <LinearLayout
+	    android:id="@+id/playMultipleLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="horizontal">
+	    
+	    <Button
+	        android:id="@+id/playAll"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:enabled="false"
+	        android:text="@string/browsePlay"/>
+	    
+	    <Button
+	        android:id="@+id/enqueueAll"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:enabled="false"
+	        android:text="@string/browseEnqueue" />
+	    
+	    <Button
+	        android:id="@+id/insertAllAtPosition"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:enabled="false"
+	        android:text="@string/browseInsertAt" />
+	</LinearLayout>
+    
+	<ListView
+        android:id="@+id/dirContentsListView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/playMultipleLayout"
+        android:layout_below="@id/browsingDirLayout"
+        android:fastScrollEnabled="true" />
+</RelativeLayout>

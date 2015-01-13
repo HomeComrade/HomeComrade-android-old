@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="appName">Media Comrade</string>
+    <string name="remote">Remote</string>
+    <string name="browse">Browse</string>
+    <string name="randomSettings">Random Settings</string>
+    <string name="currentPlaylist">Current Playlist</string>
+    
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="play">Play</string>
+    
+    <string name="connectionsServer">Server:</string>
+    <string name="connectionsConnect">Connect</string>
+    <string name="connectionsSaveOrConnect">Save or Connect</string>
+    <string name="connectionsSave">Save</string>
+    <string name="connectionsConnectOrDelete">Connect or Delete</string>
+    <string name="connectionsDelete">Delete</string>
+    <string name="connectionsConnecting">Connecting</string>
+    <string name="connectionsConnectingTo">Connecting to %1$s</string>
+    <string name="connectionsConnectionFailed">Connection Failed</string>
+    <string name="connectionsCouldNotConnectTo">Could not connect to server: \"%1$s\"</string>
+    
+    <string name="browseFetchingDir">Fetching Directory</string>
+    <string name="browseFileSetToPlay">File(s) set to play</string>
+    <string name="browseFileAddedToPlaylist">File(s) added to playlist</string>
+    <string name="browsePlay">Play</string>
+    <string name="browseEnqueue">Enqueue</string>
+    <string name="browseInsertAt">Insert At</string>
+    <string name="browseBack">&lt;back&gt;</string>
+    <string name="browseRootFolder">ROOT</string>
+    <string name="browseDirectoryListing">Directory Listing</string>
+    <string name="browseStartOfPlaylist">--Start--</string>
+    <string name="browseInsertAfter">Insert After</string>
+    
+    <string name="sendingCommand">Sending command \"%1$s\"\nTo: %2$s</string>
+    <string name="commandFailed">Command \"%1$s\" failed</string>
+    <string name="commandSuccess">Command \"%1$s\" successful</string>
+    <string name="unknownError">Unknown Error</string>
+    <string name="emptyPlaylistError">Playlist is empty</string>
+    
+    <string name="checkmark">checkmark</string>
+    
+    <!--<string name="remoteSending">Sending</string>-->
+    <string name="remoteCommandQueue">Command queue: %1$s</string>
+    <string name="remoteCommandStatus">(Queue: %1$s)\n%2$s</string>
+    <string name="remoteNumberOfEpisodes">Number of Episodes</string>
+    <string name="remotePrevious">&#171; Previous</string>
+    <string name="remoteNext">Next &#187;</string>
+    <string name="remotePlayPause">Play / Pause</string>
+    <string name="remotePlayFile">Play File</string>
+    <string name="remoteBack">&#171; Back</string>
+    <string name="remoteForward">Fwd &#187;</string>
+    <string name="remoteSkipTitle">Skip Title Sequence</string>
+    <string name="remoteRandom">Random</string>
+    <string name="remoteVolDown">&#9660; Vol Down</string>
+    <string name="remoteVolUp">Vol Up &#9650;</string>
+    <string name="remoteVolDownTv">&#9660; TV Vol Down</string>
+    <string name="remoteVolUpTv">TV Vol Up &#9650;</string>
+    <string name="remoteMuteTv">TV Mute</string>
+    <string name="remoteSourceTv">TV Source</string>
+    <string name="remoteFullScreen">Full Screen</string>
+    <string name="remoteBrowse">Browse</string>
+    <string name="remoteEnqueue">Enqueue</string>
+    <string name="remotePlay">Play</string>
+    <string name="remoteSelectShows">Select Shows</string>
+    <string name="remoteLoading">Loading&#8230;</string>
+    <string name="remoteFetchingAvailableShows">Fetching Available Shows</string>
+    
+    <string name="remoteCustomRandomShowsList">Custom Random Shows List</string>
+    
+    <string name="menuRandomSettings">Random Settings</string>
+    <string name="menuDisconnect">Disconnect</string>
+    <string name="menuShowControls">Show Controls</string>
+    <string name="menuLastPlaylist">Restore Last Playlist</string>
+    <string name="menuShowCurrentPlaylist">Show Current Playlist</string>
+    <string name="menuQuit">Quit</string>
+    <string name="menuRefresh">Refresh</string>
+    <string name="menuPowerTv">TV Power</string>
+
+</resources>

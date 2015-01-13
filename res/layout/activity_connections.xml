@@ -1,0 +1,47 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activityVerticalMargin"
+    android:paddingLeft="@dimen/activityHorizontalMargin"
+    android:paddingRight="@dimen/activityHorizontalMargin"
+    android:paddingTop="@dimen/activityVerticalMargin"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".ConnectionsActivity" >
+
+    <TextView
+        android:id="@+id/serverTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/connectionsServer" />
+    
+     <EditText
+        android:id="@+id/serverEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/serverTextView"
+        android:layout_alignBaseline="@id/serverTextView"
+        android:ems="10"
+        android:inputType="textNoSuggestions" >
+    </EditText>
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/serverEditText"
+        android:layout_marginTop="15dp"
+        android:text="@string/connectionsConnect" />
+
+    <ListView
+        android:id="@+id/serverListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/connectButton" />
+
+</RelativeLayout>
